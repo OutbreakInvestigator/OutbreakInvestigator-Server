@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="STDOUT"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%thread] %-5level %class - %msg%n</pattern>
+        </encoder>
+    </appender>
+     
+   
+    <!-- Logging spring at 'debug' will generate a ton of entries.  -->
+    <logger name="org.springframework" level="debug" additivity="false" />
+ 
+    <root>
+        <level value="DEBUG" />
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

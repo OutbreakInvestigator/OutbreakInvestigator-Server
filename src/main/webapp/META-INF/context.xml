@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/OBIServices"/>
+<Context antiJARLocking="true" path="/OBIServices">
+    <Resource name="jdbc/myaccess" auth="Container"
+              type="javax.sql.DataSource" driverClassName="net.ucanaccess.jdbc.UcanaccessDriver"
+              url="jdbc:ucanaccess://F:/RO1/github/OutbreakInvestigator-GraphDBLoader/resources/SynthesizedPublicHealthDataAddr.mdb"
+                maxActive="20" maxIdle="10"
+              maxWait="-1"/>
+    
+</Context>
