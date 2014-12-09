@@ -2,7 +2,7 @@
 <Context antiJARLocking="true" path="/OBIServices">
     <Resource name="jdbc/myaccess" auth="Container"
               type="javax.sql.DataSource" driverClassName="net.ucanaccess.jdbc.UcanaccessDriver"
-              url="jdbc:ucanaccess://F:/RO1/github/OutbreakInvestigator-Server/resources/SynthesizedPublicHealthDataAddr.mdb"
+              url="${db.url}"
                 maxActive="20" maxIdle="10"
               maxWait="-1"/>
     
