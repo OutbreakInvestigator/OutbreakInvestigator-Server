@@ -19,5 +19,6 @@ Server
 2. Install Tomcat from http://tomcat.apache.org/
 3. Open Maven project from the local Git Repo.  Build the project and run.
 4. Test the server
-a. Open a browser to:  http://localhost:8080/OBIServices/rest/gds (all graph data in JSON should be returned).
+a. Open a browser to:  http://localhost:8080/OBIServices/rest/ads/vquery?query=SELECT%20Case.*%2CAddress.Lat%2CAddress.StreetAddress%2CAddress.Lng%20FROM%20Case%2CAddress%20where%20Case.DbID%3DAddress.Case_DbID%20and%20REPORT_DT%20%3E%3D%20%232009-09-01%23%20AND%20REPORT_DT%20%3C%3D%20%232009-12-31%23
+ (all graph data in JSON should be returned).
 
